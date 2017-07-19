@@ -25,10 +25,10 @@ function f(x){
 	for(var m=0;m<arra.length;m++){
 		for(var n=m+1;n<arra.length;n++){
 			if(arra[m] ===arra[n]){
-				arra.splice(n,1);
+				var sstr = arra.splice(n,1);
 				n--;
 			}
 }
 }
-//console.log(arra);
+	console.log(sstr);//
 }
