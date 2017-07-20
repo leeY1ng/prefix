@@ -1,7 +1,7 @@
 function f(x){
 	//生产两个数组保存字符串的前缀和后缀
-	var be = af = ssa = [];
-	var bestr = afstr = sstr = "";
+	var be =[], af = [],ssa =[], sstr=[];
+	var bestr = "",afstr =  "";
 	for(var i =0;i<x.length-1;i++){
 		bestr += x.charAt(i);
 		be.push(bestr);
@@ -20,16 +20,25 @@ function f(x){
 }
 }
 }
-	console.log(arra);
+
+
+
+	for(var z=1;z<arra.length;z++){
+		var longStr;
+		if(arra[z].length >arra[z-1].length){
+			var longStr = arra[z];
+		}
+	}
+	console.log(longStr);
 	//数组去重
-	for(var m=0;m<arra.length;m++){
-		for(var n=m+1;n<arra.length;n++){
-			if(arra[m] ===arra[n]){
-				var sstr = arra.splice(n,1);
-				ssa.concat(sstr);
-				n--;
-			}
-}
-}
-	console.log(ssa);//返回重复元素
+// 	for(var m=0;m<arra.length;m++){
+// 		for(var n=m+1;n<arra.length;n++){
+// 			//if(arra[m] ===arra[n]){
+// 				//var ssa = sstr.concat(arra.splice(n,1));
+// 				//n--;
+// 			//}
+// }
+// }
+	//console.log(ssa);//返回重复元素
+	//console.log(arra);
 }
